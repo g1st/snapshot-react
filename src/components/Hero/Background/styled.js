@@ -7,5 +7,6 @@ export const HeroImage = styled.div`
   height: 100vh;
   background-image: url(${bg1});
   background-size: cover;
+  background-position: center;
 `;
 HeroImage.displayName = 'HeroImage';
