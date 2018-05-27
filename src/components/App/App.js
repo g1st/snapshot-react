@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar';
+import Hero from '../Hero';
 
 import './index.css';
 
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div>
         <NavBar />
+        <Hero />
       </div>
     );
   }
