@@ -1,13 +1,21 @@
 import React from 'react';
 
-import { Wrapper } from './styled';
+import { Wrapper, LandingInfo, LandingText, HeaderText } from './styled';
+import Button from '../Button';
 import Background from './Background';
 
 const Hero = () => {
   return (
     <Wrapper>
       <Background />
-      <div>hero</div>
+      <LandingInfo>
+        <HeaderText>Let's take a snapshot</HeaderText>
+        <LandingText>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta
+          repellendus veritatis commodi, voluptatem a facilis delectus.
+        </LandingText>
+        <Button title="Snapshot" />
+      </LandingInfo>
     </Wrapper>
   );
 };

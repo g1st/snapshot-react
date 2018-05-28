@@ -1,9 +1,15 @@
 import React from 'react';
 
-import { HeroImage } from './styled';
+import { Wrapper, HeroImage, HeroImage2, Overlay } from './styled';
 
 const Background = () => {
-  return <HeroImage />;
+  return (
+    <Wrapper>
+      <HeroImage />
+      <HeroImage2 />
+      <Overlay />
+    </Wrapper>
+  );
 };
 
 export default Background;
