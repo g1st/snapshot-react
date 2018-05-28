@@ -3,23 +3,27 @@ import styled from 'styled-components';
 import { colorMainDark } from '../../styles/variables';
 
 export const Wrapper = styled.div`
-  height: 58px;
+  min-height: 58px;
   width: 100%;
   background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 4;
 `;
 Wrapper.displayName = 'Wrapper';
 
 export const NavigationBar = styled.nav`
   height: 100%;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 `;
 NavigationBar.displayName = 'NavigationBar';
 
@@ -33,9 +37,12 @@ Logo.displayName = 'Logo';
 
 export const NavBarItems = styled.ul`
   list-style: none;
-  display: flex;
+  display: block;
   & > :first-child {
     margin-left: 0px;
+  }
+  @media (min-width: 768px) {
+    display: flex;
   }
 `;
 NavBarItems.displayName = 'NavBarItems';
@@ -46,3 +53,21 @@ export const NavBarItem = styled.li`
   text-transform: uppercase;
 `;
 NavBarItem.displayName = 'NavBarItem';
+
+export const Menu = styled.div`
+  display: inline-block;
+  user-select: none;
+  margin-right: 20px;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+Menu.displayName = 'Menu';
+
+export const MenuDrawer = styled.div`
+  position: absolute;
+  height: 400px;
+  background: red;
+`;
