@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import {
   Wrapper,
@@ -25,12 +26,9 @@ class NavBar extends Component {
     return (
       <Wrapper>
         <Menu onClick={this.toggleMenuHandler}>&#9776;</Menu>
-        <NavigationBar>
+        <NavigationBar menuExpanded={this.state.menuExpanded}>
           <Logo>Snapshot</Logo>
-          {/* {this.state.menuExpanded ? (
-            <MenuDrawer>expandintas menu</MenuDrawer>
-          ) : null} */}
-          <NavBarItems>
+          <NavBarItems menuExpanded={this.state.menuExpanded}>
             <NavBarItem>Home</NavBarItem>
             <NavBarItem>About</NavBarItem>
             <NavBarItem>Gallery</NavBarItem>
