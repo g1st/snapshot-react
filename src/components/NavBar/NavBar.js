@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
 import {
   Wrapper,
@@ -7,8 +6,7 @@ import {
   Logo,
   NavBarItems,
   NavBarItem,
-  Menu,
-  MenuDrawer
+  Menu
 } from './styled';
 
 class NavBar extends Component {
