@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
 `;
 Wrapper.displayName = 'Wrapper';
 
@@ -38,6 +37,7 @@ export const HeaderText = styled.div`
   letter-spacing: 6px;
   font-size: 2rem;
   line-height: 32px;
+  padding: 0 10px;
   font-weight: 300;
   @media (min-width: 768px) {
     font-weight: 300;
@@ -55,6 +55,7 @@ export const LandingText = styled.div`
   font-size: 1.2rem;
   line-height: 1.8rem;
   font-weight: 300;
+  padding: 0 10px;
   @media (min-width: 768px) {
     font-size: 2rem;
     line-height: 3rem;
