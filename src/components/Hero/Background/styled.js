@@ -56,7 +56,7 @@ export const zoomEffect2 = keyframes`
 export const Wrapper = styled.div`
   overflow: hidden;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 `;
 Wrapper.displayName = 'Wrapper';
