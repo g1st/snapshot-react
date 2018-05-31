@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-import img from '../../assets/images/about-woman-img.jpg';
+import { maxContentWidth } from '../../styles/variables';
 
 import {
   colorWhiteBg,
@@ -15,11 +15,29 @@ export const Wrapper = styled.div`
 `;
 Wrapper.displayName = 'Wrapper';
 
+export const AboutWrap = styled.div`
+  max-width: ${maxContentWidth};
+  margin: 0 auto;
+  @media (min-width: 1068px) {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+  }
+`;
+AboutWrap.displayName = 'AboutWrap';
+
 export const Background = styled.div`
   background-color: #fff;
   margin: 0 15px;
   border-radius: 5px;
   padding: 30px;
+  @media (min-width: 1068px) {
+    margin-left: 20px;
+    grid-column: 1 / span 2;
+    position: relative;
+    padding: 80px 120px 120px 120px;
+  }
 `;
 Background.displayName = 'Background';
 
@@ -36,6 +54,9 @@ export const HeadingText = styled.h1`
     letter-spacing: 14px;
     font-size: 2.4rem;
   }
+  @media (min-width: 1068px) {
+    text-align: left;
+  }
 `;
 HeadingText.displayName = 'HeadingText';
 
@@ -46,12 +67,22 @@ export const Text = styled.p`
   letter-spacing: 2px;
   line-height: 32px;
   padding-bottom: 20px;
+  @media (min-width: 1068px) {
+    text-align: left;
+  }
 `;
 Text.displayName = 'Text';
 
 export const CircleWrapper = styled.div`
   padding-right: 15px;
   padding-left: 15px;
+  @media (min-width: 1068px) {
+    grid-column: 3 / 4;
+    justify-self: start;
+    margin-top: 0px;
+    margin-left: -150px;
+    z-index: 1;
+  }
 `;
 CircleWrapper.displayName = 'CircleWrapper';
 
@@ -65,5 +96,9 @@ export const Circle = styled.img`
   display: block;
   margin: 50px auto 0 auto;
   border: 10px solid #fff;
+  @media (min-width: 1068px) {
+    height: 300px;
+    width: 300px;
+  }
 `;
 Circle.displayName = 'Cricle';
