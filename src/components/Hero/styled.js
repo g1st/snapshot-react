@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {
   colorText,
   colorHeadingText,
-  maxContentWidth
+  maxTextWidth
 } from '../../styles/variables';
 
 export const Wrapper = styled.div`
@@ -23,7 +23,7 @@ export const LandingInfo = styled.div`
   flex-direction: column;
   justify-content: space-around;
   height: 70%;
-  max-width: ${maxContentWidth};
+  max-width: ${maxTextWidth};
   z-index: 3;
   @media (min-width: 768px) {
     height: 45%;
