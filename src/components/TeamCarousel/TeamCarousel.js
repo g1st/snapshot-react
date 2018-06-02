@@ -1,25 +1,38 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 
+import animal_1 from '../../assets/images/adler-3366239_640-min.jpg';
+import animal_2 from '../../assets/images/african-lion-2888519_640-min.jpg';
+import animal_3 from '../../assets/images/husky-3380548_640-min.jpg';
+import animal_4 from '../../assets/images/kingfisher-2046453_640-min.jpg';
+import animal_5 from '../../assets/images/red-fox-2230731_640-min.jpg';
+import animal_6 from '../../assets/images/swan-3376622_640-min.jpg';
+import animal_7 from '../../assets/images/tiger-3424791_640-min.jpg';
+
 import { slidesToShow } from '../../util/slidesToShow';
 import {
   Wrapper,
   Team,
   HeadingText,
   Text,
+  CardHeadingText,
+  CardText,
   CarouselWrapper,
-  Item
+  Item,
+  Image,
+  ItemWrapper,
+  Img
 } from './styled';
 
-// const settings = {
-//   dots: true,
-//   arrows: false,
-//   infinite: false,
-//   swipeToSlide: true
-//   speed: 500,
-//   slidesToShow: 1,
-//   slidesToScroll: 1
-// };
+const images = [
+  animal_1,
+  animal_2,
+  animal_3,
+  animal_4,
+  animal_5,
+  animal_6,
+  animal_7
+];
 
 class TeamCarousel extends Component {
   state = {
@@ -60,15 +73,27 @@ class TeamCarousel extends Component {
         </Team>
         <CarouselWrapper>
           <Slider {...this.state.settings}>
-            <Item>
-              <h3>1</h3>
-            </Item>
-            <Item>
-              <h3>2</h3>
-            </Item>
-            <Item>
-              <h3>3</h3>
-            </Item>
+            {images.map((image, i) => {
+              return (
+                <ItemWrapper key={i}>
+                  <Item>
+                    <Img>
+                      <Image
+                        src={image}
+                        alt="animal portrait"
+                        height="200px"
+                        width="200px"
+                      />
+                      <CardHeadingText>Joe, CEO</CardHeadingText>
+                      <CardText>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                      </CardText>
+                    </Img>
+                  </Item>
+                </ItemWrapper>
+              );
+            })}
           </Slider>
         </CarouselWrapper>
       </Wrapper>
