@@ -12,3 +12,15 @@
   font-weight: bold;
   content: '━';
 }
+
+.slick-track {
+  margin-bottom: -30px;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
