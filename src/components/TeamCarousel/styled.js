@@ -9,7 +9,7 @@ import {
 
 export const Wrapper = styled.div`
   background-color: ${colorWhiteBg};
-  padding-bottom: 800px;
+  padding-bottom: 80px;
   @media (min-width: 768px) {
     padding-top: 80px;
     padding-bottom: 120px;
