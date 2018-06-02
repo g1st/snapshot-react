@@ -7,4 +7,5 @@ export const colorWhiteBg = '#f0f0f0';
 export const colorMainButton = '#e44c65';
 
 export const maxContentWidth = '1400px';
+export const maxGridWidth = '1100px';
 export const maxTextWidth = '1200px';
