@@ -14,7 +14,7 @@ const Hero = () => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta
           repellendus veritatis commodi, voluptatem a facilis delectus.
         </LandingText>
-        <Button title="Snapshot" />
+        <Button title="Snapshot" big={false} />
       </LandingInfo>
     </Wrapper>
   );
