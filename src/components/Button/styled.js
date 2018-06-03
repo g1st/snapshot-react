@@ -4,6 +4,7 @@ import { darken } from 'polished';
 import { colorMainButton, colorText } from '../../styles/variables';
 
 export const MainButton = styled.button`
+  width: ${props => (props.fullSpan ? '100%' : 'auto')};
   display: inline-block;
   background-color: ${colorMainButton};
   padding: 14px 32px;
