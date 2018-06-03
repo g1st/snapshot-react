@@ -6,12 +6,16 @@ import {
   colorMainLight,
   maxGridWidth,
   colorText,
-  maxTextWidth
+  maxTextWidth,
+  colorMainButton
 } from '../../styles/variables';
 
 export const Wrapper = styled.div`
-  margin: 40px 0;
+  margin: 40px 0 60px 0;
   background-color: #fff;
+  @media (min-width: 768px) {
+    margin-bottom: 140px;
+  }
 `;
 Wrapper.displayName = 'Wrapper';
 
@@ -51,7 +55,6 @@ export const Text = styled.p`
 Text.displayName = 'Text';
 
 export const GalleryContainer = styled.div`
-  background-color: salmon;
   max-width: ${maxGridWidth};
   display: block;
   grid-template-columns: 1fr 1fr;
@@ -65,22 +68,111 @@ export const GalleryContainer = styled.div`
 GalleryContainer.displayName = 'GalleryContainer';
 
 export const Card = styled.div`
-  background-color: grey;
-  overflow: hidden;
   margin: 0 auto 30px auto;
-  /* padding-bottom: 40px; */
   max-width: 525px;
   justify-self: center;
+  position: relative;
+  perspective: 1700px;
+  perspective-origin: 0 50%;
+  height: 100%;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
-    /* padding-bottom: 0; */
+  }
+
+  :hover {
+    > div {
+      transform: rotateY(0deg);
+    }
+    img {
+      transform: translateX(25%);
+    }
   }
 `;
 Card.displayName = 'Card';
 
 export const Image = styled.img`
-  height: auto;
+  /* height: auto; */
+  height: 100%;
   width: 100%;
+  transition: transform 0.4s;
 `;
 Image.displayName = 'Image';
+
+export const ImageContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+`;
+ImageContainer.displayName = 'ImageContainer';
+
+export const Info = styled.div`
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: ${colorMainLight};
+  /* backface-visibility: hidden; */
+  transform-origin: 0 0;
+  transform-style: preserve-3d;
+  transform: rotateY(-90deg);
+  transition: transform 0.4s;
+`;
+Info.displayName = 'Info';
+
+export const Heading = styled.h3`
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+  line-height: 24px;
+  padding: 20px 0 15px 20px;
+  color: ${colorText};
+  @media (min-width: 1000px) {
+    padding-bottom: 30px;
+    letter-spacing: 14px;
+    font-size: 1.5rem;
+  }
+`;
+Heading.displayName = 'Heading';
+
+export const CardText = styled.p`
+  color: salmon;
+  width: 100%;
+  min-width: 100%;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-size: 0.9rem;
+  padding: 0 20px;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+CardText.displayName = 'CardText';
+
+export const Button = styled.button`
+  border: none;
+  outline: none;
+  color: ${colorText};
+  border-radius: 3px;
+  padding: 4px 6px;
+  background-color: ${colorMainButton};
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  @media (min-width: 768px) {
+    padding: 8px 10px;
+    right: 15px;
+    bottom: 15px;
+  }
+  :hover {
+    cursor: pointer;
+  }
+`;
+Button.displayName = 'Button';
