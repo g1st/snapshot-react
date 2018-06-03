@@ -4,13 +4,14 @@ import PropTypes from 'prop-types';
 import { MainButton } from './styled';
 
 const propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  big: PropTypes.bool
 };
 
-const defaultProps = { title: 'Click Me' };
+const defaultProps = { title: 'Click Me', big: true };
 
-const Button = ({ title }) => {
-  return <MainButton>{title}</MainButton>;
+const Button = ({ title, big }) => {
+  return <MainButton fullSpan={big}>{title}</MainButton>;
 };
 
 Button.propTypes = propTypes;
