@@ -5,6 +5,7 @@ import Hero from '../Hero';
 import About from '../About';
 import TeamCarousel from '../TeamCarousel';
 import Gallery from '../Gallery';
+import Contact from '../Contact';
 import './index.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <About />
         <TeamCarousel />
         <Gallery />
+        <Contact />
       </div>
     );
   }
