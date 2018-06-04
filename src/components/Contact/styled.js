@@ -9,11 +9,8 @@ import {
 } from '../../styles/variables';
 
 export const Wrapper = styled.div`
-  padding: 60px 0;
+  padding: 60px 0 20px 0;
   background-color: ${colorMainDark};
-  @media (min-width: 768px) {
-    padding: 140px 0;
-  }
 `;
 Wrapper.displayName = 'Wrapper';
 
