@@ -6,6 +6,7 @@ import About from '../About';
 import TeamCarousel from '../TeamCarousel';
 import Gallery from '../Gallery';
 import Contact from '../Contact';
+import Footer from '../Footer';
 import './index.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
         <TeamCarousel />
         <Gallery />
         <Contact />
+        <Footer />
       </div>
     );
   }
