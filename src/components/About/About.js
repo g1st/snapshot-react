@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <AboutWrap>
         <Background>
           <HeadingText>Background</HeadingText>

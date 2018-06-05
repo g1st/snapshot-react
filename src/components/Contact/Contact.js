@@ -5,7 +5,7 @@ import { Wrapper, Container, HeadingText, Text } from './styled';
 
 const Contact = () => {
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <Container>
         <HeadingText>Send a message</HeadingText>
         <Text>

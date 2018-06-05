@@ -19,7 +19,7 @@ import fruit from '../../assets/images/cherries-2402449_640-min.jpg';
 
 const Gallery = () => {
   return (
-    <Wrapper>
+    <Wrapper id="gallery">
       <Container>
         <HeadingText>Gallery</HeadingText>
         <Text>
