@@ -17,9 +17,11 @@
   margin-bottom: -30px;
 }
 
-:focus {
+/* it's against a11y to disable outline on focus */
+
+/* :focus {
   outline: none;
-}
+} */
 
 ::-moz-focus-inner {
   border: 0;
