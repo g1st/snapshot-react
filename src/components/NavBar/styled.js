@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { lighten } from 'polished';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+// import { NavLink } from 'react-router-dom';
 
 import { colorMainDark, colorText } from '../../styles/variables';
 
@@ -70,25 +72,47 @@ export const NavBarItems = styled.ul`
 `;
 NavBarItems.displayName = 'NavBarItems';
 
-export const NavBarItem = styled.li`
+export const NavLinkItem = styled(NavLink)`
+  position: relative;
   color: ${lighten(0.4, `${colorMainDark}`)};
   padding: 5px 0 5px 20px;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   width: 100%;
   line-height: 36px;
+  text-decoration: none;
 
   :hover {
     cursor: pointer;
-    color: ${colorMainDark};
+  }
+
+  ::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 10px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
+    visibility: hidden;
+    ${props =>
+      props.active === 'true'
+        ? `{
+      transform: scaleX(1);
+      visibility: visible;
+    }`
+        : null};
   }
 
   @media (min-width: 768px) {
+    font-size: 1rem;
     margin: 0 30px;
     padding-left: 0;
   }
 `;
-NavBarItem.displayName = 'NavBarItem';
+NavLinkItem.displayName = 'NavLinkItem';
 
 export const Menu = styled.div`
   display: block;
