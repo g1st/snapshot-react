@@ -6,7 +6,7 @@ import Background from './Background';
 
 const Hero = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <Background />
       <LandingInfo>
         <HeaderText>Let's take a snapshot</HeaderText>
