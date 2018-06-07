@@ -50,7 +50,7 @@ class App extends Component {
       : null;
   };
 
-  _handleEnterGallery = props => {
+  _handleEnterGallery = () => {
     this.setState(() => ({
       activeNav: 'gallery'
     }));
