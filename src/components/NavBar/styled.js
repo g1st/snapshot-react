@@ -73,6 +73,7 @@ export const NavBarItems = styled.ul`
 NavBarItems.displayName = 'NavBarItems';
 
 export const NavLinkItem = styled(NavLink)`
+  display: block;
   position: relative;
   color: ${lighten(0.4, `${colorMainDark}`)};
   padding: 5px 0 5px 20px;
@@ -84,32 +85,38 @@ export const NavLinkItem = styled(NavLink)`
 
   :hover {
     cursor: pointer;
-  }
-
-  ::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    bottom: 10px;
-    left: 0;
-    transform: scaleX(0);
-    transition: all 0.4s ease;
-    visibility: hidden;
-    ${props =>
-      props.active === 'true'
-        ? `{
-      transform: scaleX(1);
-      visibility: visible;
-    }`
-        : null};
+    color: ${colorMainDark};
   }
 
   @media (min-width: 768px) {
+    display: inline-block;
     font-size: 1rem;
     margin: 0 30px;
     padding-left: 0;
+
+    :hover {
+      color: #9aaebf;
+    }
+
+    ::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      bottom: 5px;
+      left: 0;
+      transform: scaleX(0);
+      transition: all 0.4s ease;
+      visibility: hidden;
+      ${props =>
+        props.active === 'true'
+          ? `{
+      transform: scaleX(1);
+      visibility: visible;
+    }`
+          : null};
+    }
   }
 `;
 NavLinkItem.displayName = 'NavLinkItem';
