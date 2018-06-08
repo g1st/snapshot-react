@@ -28,6 +28,12 @@ class NavBar extends Component {
     }));
   };
 
+  closeMenuHandler = () => {
+    this.setState(() => ({
+      menuExpanded: false
+    }));
+  };
+
   // credits https://github.com/rafrex/react-router-hash-link/issues/25
   scrollWithOffset = (el, offset) => {
     const elementPosition = el.offsetTop - offset;
@@ -50,6 +56,7 @@ class NavBar extends Component {
               to="/#home"
               exact
               active={this.props.activeNav === 'home' ? 'true' : null}
+              onClick={this.closeMenuHandler}
             >
               Home
             </NavLink>
@@ -57,6 +64,7 @@ class NavBar extends Component {
               to="/#about"
               scroll={el => this.scrollWithOffset(el, 0)}
               active={this.props.activeNav === 'about' ? 'true' : null}
+              onClick={this.closeMenuHandler}
             >
               About
             </NavLink>
@@ -64,6 +72,7 @@ class NavBar extends Component {
               smooth
               to="/#gallery"
               active={this.props.activeNav === 'gallery' ? 'true' : null}
+              onClick={this.closeMenuHandler}
             >
               Gallery
             </NavLink>
@@ -71,6 +80,7 @@ class NavBar extends Component {
               smooth
               to="/#contact"
               active={this.props.activeNav === 'contact' ? 'true' : null}
+              onClick={this.closeMenuHandler}
             >
               Contact
             </NavLink>
