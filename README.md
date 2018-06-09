@@ -38,4 +38,4 @@ Photos by Imani Clovis, Sergey Zolkin on Unsplash.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://g1st.github.io/snow-free/)
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://g1st.github.io/snapshot-react/)
