@@ -21,29 +21,39 @@ const Footer = () => {
       <Container>
         <IconsList>
           <ListItem>
-            <Icon>
-              <FontAwesomeIcon icon={faCodepen} />
-            </Icon>
+            <a href="https://codepen.io/g1st">
+              <Icon>
+                <FontAwesomeIcon icon={faCodepen} />
+              </Icon>
+            </a>
           </ListItem>
           <ListItem>
-            <Icon>
-              <FontAwesomeIcon icon={faTwitter} />
-            </Icon>
+            <a href="https://twitter.com/g1stas">
+              <Icon>
+                <FontAwesomeIcon icon={faTwitter} />
+              </Icon>
+            </a>
           </ListItem>
           <ListItem>
-            <Icon>
-              <FontAwesomeIcon icon={faGithub} />
-            </Icon>
+            <a href="https://github.com/g1st">
+              <Icon>
+                <FontAwesomeIcon icon={faGithub} />
+              </Icon>
+            </a>
           </ListItem>
           <ListItem>
-            <Icon>
-              <FontAwesomeIcon icon={faInstagram} />
-            </Icon>
+            <a href="https://github.com/g1st">
+              <Icon>
+                <FontAwesomeIcon icon={faInstagram} />
+              </Icon>
+            </a>
           </ListItem>
           <ListItem>
-            <Icon>
-              <FontAwesomeIcon icon={faGoogle} />
-            </Icon>
+            <a href="https://github.com/g1st">
+              <Icon>
+                <FontAwesomeIcon icon={faGoogle} />
+              </Icon>
+            </a>
           </ListItem>
         </IconsList>
         <Credits>

@@ -33,12 +33,16 @@ IconsList.displayName = 'IconsList';
 export const ListItem = styled.li`
   display: inline-block;
   color: #fff;
+
+  a {
+    color: #fff;
+  }
 `;
 ListItem.displayName = 'ListItem';
 
 export const Icon = styled.div`
   border: 1px solid #fff;
-  border-radius: 3px;
+  border-radius: 4px;
   width: 45px;
   height: 45px;
   line-height: 45px;
