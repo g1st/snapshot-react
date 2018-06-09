@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component matches snapshot 1`] = `
+<Wrapper>
+  <Menu
+    onClick={[Function]}
+  >
+    ☰
+  </Menu>
+  <NavigationBar
+    menuExpanded={false}
+  >
+    <Logo>
+      Snapshot
+    </Logo>
+    <NavBarItems
+      menuExpanded={false}
+    >
+      <NavLinkItem
+        active="true"
+        exact={true}
+        onClick={[Function]}
+        smooth={true}
+        to="/#home"
+      >
+        Home
+      </NavLinkItem>
+      <NavLinkItem
+        active={null}
+        onClick={[Function]}
+        scroll={[Function]}
+        to="/#about"
+      >
+        About
+      </NavLinkItem>
+      <NavLinkItem
+        active={null}
+        onClick={[Function]}
+        smooth={true}
+        to="/#gallery"
+      >
+        Gallery
+      </NavLinkItem>
+      <NavLinkItem
+        active={null}
+        onClick={[Function]}
+        smooth={true}
+        to="/#contact"
+      >
+        Contact
+      </NavLinkItem>
+    </NavBarItems>
+  </NavigationBar>
+</Wrapper>
+`;

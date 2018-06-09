@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact Component matches snapshot 1`] = `
+<Wrapper
+  id="contact"
+>
+  <Container>
+    <HeadingText>
+      Send a message
+    </HeadingText>
+    <Text>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quos cupiditate temporibus, quisquam dolorem voluptatem modi beatae.
+    </Text>
+    <Form />
+  </Container>
+</Wrapper>
+`;

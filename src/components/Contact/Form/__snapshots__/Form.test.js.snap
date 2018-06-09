@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component matches snapshot 1`] = `
+<Wrapper>
+  <FormContainer
+    onSubmit={[Function]}
+  >
+    <Row>
+      <Name
+        name="name"
+        onChange={[Function]}
+        placeholder="Name"
+        required={true}
+        type="text"
+        value=""
+      />
+      <Email
+        name="email"
+        onChange={[Function]}
+        placeholder="Email"
+        required={true}
+        type="email"
+        value=""
+      />
+    </Row>
+    <Message
+      name="message"
+      onChange={[Function]}
+      placeholder="Message"
+      required={true}
+      rows="8"
+      value=""
+    />
+    <Button
+      big={false}
+      title="Send message"
+      type="submit"
+    />
+  </FormContainer>
+</Wrapper>
+`;

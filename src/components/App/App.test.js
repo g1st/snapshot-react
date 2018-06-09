@@ -11,4 +11,11 @@ describe('App Component', () => {
     );
     expect(toJson(tree)).toMatchSnapshot();
   });
+  it('passes activeNav to NavBar', () => {
+    const tree = shallow(
+      <App onEnter={() => {}} onLeave={() => {}} topOffset={0} />
+    );
+
+    expect(tree.find('NavBar').props().activeNav).toEqual('home');
+  });
 });

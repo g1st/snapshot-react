@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Component matches snapshot 1`] = `
+<Wrapper
+  id="about"
+>
+  <AboutWrap>
+    <Background>
+      <HeadingText>
+        Background
+      </HeadingText>
+      <Text>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minima expedita aut voluptatem praesentium quae, ad veniam eveniet eum quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </Text>
+    </Background>
+    <CircleWrapper>
+      <Cricle
+        alt="Woman in dress"
+        src="about-woman-img.jpg"
+      />
+    </CircleWrapper>
+  </AboutWrap>
+</Wrapper>
+`;

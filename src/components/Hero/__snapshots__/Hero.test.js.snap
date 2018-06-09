@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Component matches snapshot 1`] = `
+<Wrapper
+  id="home"
+>
+  <Background />
+  <LandingInfo>
+    <HeaderText>
+      Let's take a snapshot
+    </HeaderText>
+    <LandingText>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta repellendus veritatis commodi, voluptatem a facilis delectus.
+    </LandingText>
+    <Button
+      big={false}
+      title="Snapshot"
+    />
+  </LandingInfo>
+</Wrapper>
+`;
