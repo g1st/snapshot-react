@@ -8,7 +8,7 @@ const propTypes = {
   big: PropTypes.bool
 };
 
-const defaultProps = { title: 'Click Me', big: true };
+const defaultProps = { title: 'Click Me', big: false };
 
 const Button = ({ title, big }) => {
   return <MainButton fullSpan={big}>{title}</MainButton>;
