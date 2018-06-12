@@ -1,4 +1,5 @@
-export const slidesToShow = width => {
+// @flow
+export const slidesToShow = (width: number) => {
   if (width > 1300) {
     return 3;
   }
