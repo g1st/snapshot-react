@@ -19,6 +19,15 @@ class Form extends Component {
     window.removeEventListener('resize', this.handleResize);
   }
 
+  // don't rerender on width change
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      nextState.message !== this.state.message ||
+      nextState.name !== this.state.name ||
+      nextState.email !== this.state.email
+    );
+  }
+
   handleResize = e => {
     const windowWidth = e.target.innerWidth;
 
