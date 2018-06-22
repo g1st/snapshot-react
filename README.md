@@ -4,7 +4,11 @@ Template from [here](https://www.free-css.com/free-css-templates/page227/snapsho
 
 ### Getting Started
 
-1.  Download or clone the repo
+1.  Download or clone the repo, then
+
+```bash
+cd snapshot-react
+```
 
 2.  Install dependencies
 
